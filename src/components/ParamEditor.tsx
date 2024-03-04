@@ -17,7 +17,7 @@ const ParamEditor:FC<Props> = ({params = [], model}) => {
     }
 
     return (
-        <div style={{display: 'flex', flexDirection: 'column', gap: '1rem', minWidth: '300px'}}>
+        <div style={{display: 'flex', flexDirection: 'column', gap: '1rem', minWidth: '300px', maxWidth: '350px'}}>
             {params.map(param => (
                 <Param param={param} key={param.id} model={editedModel} setModel={setEditedModel}/>
             ))}
